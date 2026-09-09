@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Your Eyes Only ✨</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <main class="portal-card" id="portal-card">
+    <div class="card-icon">🔐</div>
+    <h1>For Your Eyes Only</h1>
+    <p class="subtitle">Enter the secret combination to unlock this chapter.</p>
+
+    <form id="gateway-form" autocomplete="off">
+      <div class="form-group">
+        <input
+          type="password"
+          id="portal-password"
+          class="input-field"
+          placeholder="Enter secret word..."
+          required
+        />
+        <input
+          type="password"
+          id="portal-passcode"
+          class="input-field"
+          placeholder="Enter secret passcode..."
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn-submit">Enter Portal ✨</button>
+      <div class="status-message" id="status-msg"></div>
+    </form>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

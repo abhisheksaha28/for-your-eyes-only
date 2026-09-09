@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Dream Unfolding ✨</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Floating Bollywood Background Player -->
+  <div class="audio-widget" id="music-toggle" title="Click to Play/Pause">
+    <span class="audio-icon" id="music-icon">🎵</span>
+    <span class="audio-text" id="music-status">Play “Mein Tera”</span>
+  </div>
+
+  <!-- Audio Element (Place your audio file in assets/audio/mein-tera.mp3) -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/audio/mein-tera.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="story-container">
+    <div class="story-card">
+      <span class="chapter-badge">Chapter One</span>
+      <h1>Like a Dream I Never Knew</h1>
+
+      <!-- Poem 1: When I First Met Her -->
+      <div class="poem-box">
+        The noise of the world faded into silence,
+        the very second your eyes met mine.
+        It felt as though reality had gently paused,
+        giving way to a daydream I never knew existed—
+        an unspoken warmth that swept away everything before it.
+      </div>
+
+      <!-- Photo 1: Dream 1 (Her Single Picture) -->
+      <div class="media-frame">
+        <!-- Change the extension (.jpg, .jpeg, .png) to match your exact file name in assets/images -->
+        <img src="assets/images/dream1.jpg" alt="Her Photograph" onerror="this.src='assets/images/dream1.png'" />
+        <div class="frame-caption">The vision that changed everything.</div>
+      </div>
+
+      <!-- Poem 2: Her Beauty -->
+      <div class="poem-box">
+        There you stood, radiant and effortless,
+        outshining every definition of beauty I’d ever known.
+        Not merely in the grace of your smile,
+        nor the quiet elegance of your presence,
+        but in the way your light made the whole world look softer,
+        leaving me completely captivated.
+      </div>
+
+      <!-- Photo 2: Dream 2 (First Couple Pic) -->
+      <div class="media-frame">
+        <!-- Change the extension (.jpg, .jpeg, .png) to match your exact file name in assets/images -->
+        <img src="assets/images/dream2.jpg" alt="Our First Photo Together" onerror="this.src='assets/images/dream2.png'" />
+        <div class="frame-caption">Our beginning, captured in a frame.</div>
+      </div>
+
+      <!-- Poem 3: Falling in Love & Becoming Hers -->
+      <div class="poem-box">
+        And then, we stood together side by side,
+        freezing time in that very first picture of us.
+        That was the precise instant my heart surrendered—
+        quietly, wholly, and without a single doubt.
+        From that moment forward, I was no longer just me;
+        I was completely, effortlessly yours.
+      </div>
+
+      <div>
+        <a href="index.html" class="nav-link">← Return to Entrance</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
