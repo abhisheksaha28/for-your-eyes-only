@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Secret Prize for You ✨</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Floating Canvas for Heart Animations -->
+  <canvas id="heart-canvas"></canvas>
+
+  <!-- Audio Controller (Starts upon unlock) -->
+  <div class="audio-widget" id="music-toggle" style="display: none;" title="Click to Play/Pause">
+    <span class="audio-icon" id="music-icon">🔊</span>
+    <span class="audio-text" id="music-status">Playing Music</span>
+  </div>
+
+  <!-- Audio Element (Drop your mp3 into assets/audio/guess-prize.mp3) -->
+  <audio id="prize-music" loop preload="auto">
+    <source src="assets/audio/tomake-chai.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="lock-wrapper">
+    <!-- 1. Translucent Frosted Glass Overlay -->
+    <div class="frost-overlay" id="frost-overlay">
+      <div class="lock-box" id="lock-modal">
+        <div class="card-icon">🎁</div>
+        <h1>Guess Your Prize</h1>
+        <p class="subtitle">There is something special waiting under the frost. Prove it is really you to open it.</p>
+
+        <form id="unlock-form" autocomplete="off">
+          <div class="form-group">
+            <input
+              type="password"
+              id="prize-pass"
+              class="input-field"
+              placeholder="Enter secret password..."
+              required
+            />
+          </div>
+          <button type="submit" class="btn-submit">Claim Your Prize 💖</button>
+          <div class="status-message" id="prize-error"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 2. The Hidden Card Content (Becomes fully visible on unlock) -->
+    <div class="story-card" id="prize-content">
+      <span class="chapter-badge">Your Special Prize</span>
+      <h1>My Heart, In Words</h1>
+
+      <!-- Photo Frame -->
+      <div class="media-frame">
+        <!-- Change to match your file: assets/images/prize.jpg or .png -->
+        <img src="assets/images/prize.jpeg" alt="Special Memory" onerror="this.src='assets/images/prize.png'" />
+        <div class="frame-caption">The one who holds my heart.</div>
+      </div>
+
+      <!-- Exact Dedicated Poem -->
+      <div class="poem-container">
+        <div class="poem-stanza">you are the love , that i craved for,
+you are the destiny’s path, i paved for,
+you are the star , i wished for,
+you are the dream, i sleep for……</div>
+
+        <div class="poem-stanza">you are ,the dim light in the darkness , 
+the peace in the silence,
+the satisfaction in the calmness,
+the warmth feeling, in my loneliness….</div>
+
+        <div class="poem-stanza">still in disbelief, if i actually got you,
+still afraid to sleep, if dream breaks and i loose you,
+fate is on my side, or maybe away from yours,
+that we met, maybe fault in our stars….</div>
+
+        <div class="poem-stanza">if you wanna know the truth,
+i love you…
+if you wanna belief  false,
+i still love you….</div>
+
+        <div class="poem-stanza">loving you ,has become a habit for me,
+has become a lifestyle for me,
+has become a duty for me,
+has become like, breathing for me…….</div>
+
+        <div class="poem-stanza">untimely, tangled, clumsy,
+yet cozy, warm and bright,
+that's the thing we have,
+and we shall overcome, all the hard cold nights .</div>
+      </div>
+
+      <div>
+        <a href="index.html" class="nav-link">← Return to Entrance</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/guess-prize.js"></script>
+</body>
+</html>

@@ -16,6 +16,11 @@ const ROUTES = [
     passcode: "dream",         // Replace with your chosen passcode/date
     redirect: "dream.html"
   },
+  {
+    password: "tsuki",        // Replace with your chosen secret word
+    passcode: "guess-prize",         // Replace with your chosen passcode/date
+    redirect: "guess-prize.html"
+  },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
